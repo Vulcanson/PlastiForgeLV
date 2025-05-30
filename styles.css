@@ -5,7 +5,7 @@ body {
     color: #f8f8f8; /* Clean white */
     text-align: center;
     padding: 20px;
-    
+
     /* Centering Fix */
     display: flex;
     flex-direction: column;
@@ -35,6 +35,13 @@ hr {
     border: 1px solid #ff9900; /* Orange divider for energy */
     width: 60%;
     margin: 20px 0;
+}
+
+/* Logo Image */
+img {
+    display: block;
+    margin: 20px auto; /* Centers the image */
+    max-width: 100%; /* Ensures responsiveness */
 }
 
 /* Category Links */
