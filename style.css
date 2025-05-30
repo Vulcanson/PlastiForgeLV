@@ -34,19 +34,29 @@ hr {
     margin: 20px 0;
 }
 
-/* Links */
-a {
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-    color: #d63031; /* Red for urgency */
-    transition: color 0.3s ease-in-out;
-    padding: 8px 12px;
-    border-radius: 5px;
-    background-color: #ffeaa7; /* Light yellow to attract attention */
+/* Category Links */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
 }
 
-a:hover {
+ul li {
+    margin: 10px 0;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #d63031; /* Red for urgency */
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #ffeaa7; /* Light yellow for attention */
+    transition: 0.3s;
+}
+
+ul li a:hover {
     background-color: #e74c3c; /* Darker red on hover */
     color: #fff;
     transform: scale(1.05);
