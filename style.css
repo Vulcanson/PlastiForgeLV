@@ -5,11 +5,14 @@ body {
     color: #f8f8f8; /* Clean white */
     text-align: center;
     padding: 20px;
+    
+    /* Centering Fix */
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* Ensures everything stays in the center */
     justify-content: center;
     min-height: 100vh;
+    width: 100%;
 }
 
 /* Headings */
@@ -39,6 +42,7 @@ ul {
     list-style-type: none;
     padding: 0;
     margin: 20px 0;
+    text-align: center; /* Ensures list stays centered */
 }
 
 ul li {
@@ -46,6 +50,7 @@ ul li {
 }
 
 ul li a {
+    display: inline-block;
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
