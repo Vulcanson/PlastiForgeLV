@@ -41,8 +41,8 @@
         const gallery = document.getElementById("gallery");
         for (let i = 1; i <= 137; i++) {
             let img = document.createElement("img");
-            img.src = `PlastiForgeLV/photos/labubu/image${String(i).padStart(3, '0')}.jpg`; // Ensures leading zeros
-            img.alt = `Labubu Custom Print ${i}`;
+            img.src = `PlastiForgeLV/photos/labubu/image${String(i).padStart(3, '0')}.jpg`; // Ensures correct naming
+            img.alt = ""; // Removed unnecessary alt text
             gallery.appendChild(img);
         }
     </script>
