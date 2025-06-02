@@ -14,7 +14,7 @@
             gap: 10px;
         }
         img {
-            width: 200px; /* Adjusted size */
+            width: 200px;
             height: auto;
             border: 2px solid #ddd;
             padding: 5px;
@@ -28,27 +28,6 @@
 <body>
     <h1>Labubu Accessories & Figures</h1>
     <p>Explore our custom 3D printed Labubu figures and accessories!</p>
-    
-    <hr>
-    
-    <!-- Labubu Images -->
-    <div style="text-align: center;">
-        <h2>Labubu Figures</h2>
-        <img src="photos/labubu/2025-04-14_bee1dc55402af.webp" alt="Labubu Figure 1" width="300">
-        <img src="photos/labubu/2025-01-09_2a49ab02ba711.webp" alt="Labubu Figure 2" width="300">
-        <img src="photos/labubu/2025-02-28_d246c8f6ce96.webp" alt="Labubu Figure 3" width="300">
-        <img src="photos/labubu/2025-03-13_55aaa92b00b9.webp" alt="Labubu Figure 4" width="300">
-    </div>
-
-    <hr>
-
-    <div style="text-align: center;">
-        <h2>Labubu Accessories</h2>
-        <img src="photos/labubu/2025-04-27_b825e07e365f28.webp" alt="Labubu Accessory 1" width="300">
-        <img src="photos/labubu/2025-04-28_1f6bc86f0480a8.webp" alt="Labubu Accessory 2" width="300">
-        <img src="photos/labubu/2025-03-31_15cdefda0828f.webp" alt="Labubu Accessory 3" width="300">
-        <img src="photos/labubu/2025-04-26_19749d37020f8.webp" alt="Labubu Accessory 4" width="300">
-    </div>
 
     <hr>
 
@@ -62,7 +41,7 @@
         const gallery = document.getElementById("gallery");
         for (let i = 1; i <= 137; i++) {
             let img = document.createElement("img");
-            img.src = `photos/labubu/image${String(i).padStart(3, '0')}.jpg`; // Ensures leading zeros
+            img.src = `PlastiForgeLV/photos/labubu/image${String(i).padStart(3, '0')}.jpg`; // Ensures leading zeros
             img.alt = `Labubu Custom Print ${i}`;
             gallery.appendChild(img);
         }
