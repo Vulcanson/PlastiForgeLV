@@ -43,15 +43,23 @@
         // Load images from image001 to image009
         for (let i = 1; i <= 9; i++) {
             let img = document.createElement("img");
-            img.src = `${baseUrl}image00${i}.jpg`; // Correct leading zeros for small numbers
+            img.src = `${baseUrl}image00${i}.jpg`; // Ensures leading double zero format
             img.alt = "";
             gallery.appendChild(img);
         }
 
-        // Load images from image010 to image137
-        for (let i = 10; i <= 137; i++) {
+        // Load images from image010 to image099
+        for (let i = 10; i <= 99; i++) {
             let img = document.createElement("img");
-            img.src = `${baseUrl}image${i}.jpg`; // Standard numbering
+            img.src = `${baseUrl}image0${i}.jpg`; // Standard leading zero format
+            img.alt = "";
+            gallery.appendChild(img);
+        }
+
+        // Load images from image100 to image137
+        for (let i = 100; i <= 137; i++) {
+            let img = document.createElement("img");
+            img.src = `${baseUrl}image${i}.jpg`; // No leading zeros
             img.alt = "";
             gallery.appendChild(img);
         }
