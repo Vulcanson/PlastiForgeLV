@@ -3,8 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PlastiForgeLV - Our Products</title>
+    <title>PlastiForgeLV - What We Offer</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        #categories {
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        .category {
+            padding: 15px;
+            background-color: #ddd;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 18px;
+            transition: 0.2s;
+        }
+        .category:hover {
+            background-color: #bbb;
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 <body>
     <h1>Welcome to PlastiForgeLV</h1>
@@ -12,9 +33,24 @@
 
     <hr>
 
-    <h2>Our Products</h2>
+    <h2>Our Categories</h2>
+    <div id="categories">
+        <a href="figurines.html" class="category">Figurine Printing</a>
+        <a href="miniatures.html" class="category">Miniatures Section</a>
+        <a href="carparts.html" class="category">Car Parts Section</a>
+        <a href="gaming.html" class="category">Gaming Accessories</a>
+        <a href="household.html" class="category">Household Items</a>
+        <a href="customorders.html" class="category">Custom Orders</a>
+    </div>
+
+    <hr>
+
+    <h2>Gaming Accessories</h2>
+    <p>Click below to explore all gaming-related prints:</p>
     <ul>
-        <li><a href="labubu.html">🔗 View Labubu Figures & Accessories</a></li>
+        <li><a href="controllerholders.html">🎮 Controller Holders</a></li>
+        <li><a href="gamingstands.html">🕹 Gaming System Stands</a></li>
+        <li><a href="headphoneholders.html">🎧 Headphone Holders</a></li>
     </ul>
 
     <hr>
