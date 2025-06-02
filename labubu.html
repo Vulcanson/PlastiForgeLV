@@ -39,9 +39,19 @@
 
     <script>
         const gallery = document.getElementById("gallery");
-        for (let i = 1; i <= 100; i++) {
+
+        // Load images from image001 to image009
+        for (let i = 1; i <= 9; i++) {
             let img = document.createElement("img");
-            img.src = `PlastiForgeLV/photos/labubu/image${String(i).padStart(3, '0')}.jpg`; // Ensures correct numbering
+            img.src = `PlastiForgeLV/photos/labubu/image00${i}.jpg`; // Leading double zero format
+            img.alt = "";
+            gallery.appendChild(img);
+        }
+
+        // Load images from image010 to image100
+        for (let i = 10; i <= 100; i++) {
+            let img = document.createElement("img");
+            img.src = `PlastiForgeLV/photos/labubu/image${i}.jpg`; // Standard numbering format
             img.alt = "";
             gallery.appendChild(img);
         }
