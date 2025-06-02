@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Labubu Collection - PlastiforgeLV</title>
+    <title>Labubu Collection - PlastiForgeLV</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         #gallery {
@@ -26,14 +26,13 @@
     </style>
 </head>
 <body>
-    <h1>Labubus and Accessories</h1>
-    <p>Explore our custom 3D printed Labubu figures and accessories!</p>
+    <h1>Labubu Figures & Accessories</h1>
+    <p>Explore our custom 3D printed Labubu designs!</p>
 
     <hr>
 
-    <!-- Unified Labubu Image Gallery -->
     <div style="text-align: center;">
-        <h2>Labubu Custom Prints</h2>
+        <h2>Labubu Collection</h2>
         <div id="gallery"></div>
     </div>
 
@@ -44,7 +43,7 @@
         // Load images from image001 to image009
         for (let i = 1; i <= 9; i++) {
             let img = document.createElement("img");
-            img.src = `${baseUrl}image00${i}.jpg`; // Ensures leading double zero format
+            img.src = `${baseUrl}image00${i}.jpg`; // Correct leading zeros for small numbers
             img.alt = "";
             gallery.appendChild(img);
         }
@@ -52,7 +51,7 @@
         // Load images from image010 to image137
         for (let i = 10; i <= 137; i++) {
             let img = document.createElement("img");
-            img.src = `${baseUrl}image${i}.jpg`; // Standard numbering format
+            img.src = `${baseUrl}image${i}.jpg`; // Standard numbering
             img.alt = "";
             gallery.appendChild(img);
         }
@@ -60,8 +59,6 @@
 
     <hr>
 
-    <!-- Contact Section -->
-    <p>Interested in custom Labubu prints? Get in touch:</p>
     <p>📧 <a href="mailto:anvilx.3d@gmail.com">Email Us</a></p>
     <p>📞 <a href="tel:+17025368951">Call Us</a></p>
 
