@@ -5,6 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Labubu Collection - PlastiforgeLV</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        #gallery {
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        img {
+            width: 200px; /* Adjusted size */
+            height: auto;
+            border: 2px solid #ddd;
+            padding: 5px;
+            transition: transform 0.2s;
+        }
+        img:hover {
+            transform: scale(1.1);
+        }
+    </style>
 </head>
 <body>
     <h1>Labubu Accessories & Figures</h1>
@@ -30,6 +49,24 @@
         <img src="photos/labubu/2025-03-31_15cdefda0828f.webp" alt="Labubu Accessory 3" width="300">
         <img src="photos/labubu/2025-04-26_19749d37020f8.webp" alt="Labubu Accessory 4" width="300">
     </div>
+
+    <hr>
+
+    <!-- Automated Image Gallery -->
+    <div style="text-align: center;">
+        <h2>Labubu Custom Prints</h2>
+        <div id="gallery"></div>
+    </div>
+
+    <script>
+        const gallery = document.getElementById("gallery");
+        for (let i = 1; i <= 137; i++) {
+            let img = document.createElement("img");
+            img.src = `photos/labubu/image${String(i).padStart(3, '0')}.jpg`; // Ensures leading zeros
+            img.alt = `Labubu Custom Print ${i}`;
+            gallery.appendChild(img);
+        }
+    </script>
 
     <hr>
 
