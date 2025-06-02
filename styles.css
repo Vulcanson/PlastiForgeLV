@@ -1,6 +1,6 @@
 /* General Styling */
 body {
-    background-color: #0d0d0d; /* Deep black for a sleek, premium feel */
+    background-color: #0d0d0d; /* Sleek, premium deep black */
     color: white; /* High contrast for readability */
     font-family: Arial, sans-serif;
     text-align: center;
@@ -8,7 +8,7 @@ body {
 
 /* Notice Bar (Site Under Construction) */
 .notice {
-    background-color: #ff3b3b; /* Urgent red to grab attention */
+    background-color: #ff3b3b; /* Bold red for urgency */
     color: white;
     padding: 10px;
     font-size: 18px;
