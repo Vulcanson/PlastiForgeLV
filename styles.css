@@ -1,101 +1,45 @@
-/* Global Styles */
+/* General Styling */
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #141414; /* Slightly lighter black for depth */
-    color: #f8f8f8; /* Clean white */
+    background-color: #1a1a1a; /* Dark, professional background */
+    color: white; /* Clean, readable contrast */
+    font-family: Arial, sans-serif;
     text-align: center;
-    padding: 20px;
+}
 
-    /* Centering Fix */
+/* Category Sections */
+#categories {
     display: flex;
-    flex-direction: column;
-    align-items: center; /* Ensures everything stays in the center */
+    flex-wrap: wrap;
     justify-content: center;
-    min-height: 100vh;
-    width: 100%;
+    gap: 15px;
 }
 
-/* Headings */
-h1 {
-    color: #0077cc; /* Strong blue for professionalism & trust */
-    font-size: 34px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-/* Paragraphs */
-p {
-    font-size: 20px;
-    color: #ff9900; /* Orange for enthusiasm & warmth */
-    margin-bottom: 12px;
-}
-
-/* Horizontal Divider */
-hr {
-    border: 1px solid #ff9900; /* Orange divider for energy */
-    width: 60%;
-    margin: 20px 0;
-}
-
-/* Logo Image */
-img {
-    display: block;
-    margin: 20px auto; /* Centers the image */
-    max-width: 100%; /* Ensures responsiveness */
-}
-
-/* Category Links */
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 20px 0;
-    text-align: center; /* Ensures list stays centered */
-}
-
-ul li {
-    margin: 10px 0;
-}
-
-ul li a {
-    display: inline-block;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-    color: #d63031; /* Red for urgency */
-    padding: 10px 15px;
-    border-radius: 5px;
-    background-color: #ffeaa7; /* Light yellow for attention */
-    transition: 0.3s;
-}
-
-ul li a:hover {
-    background-color: #e74c3c; /* Darker red on hover */
-    color: #fff;
-    transform: scale(1.05);
-}
-
-/* Call-to-Action Button */
-.button {
-    background-color: #ff4444; /* Red to drive urgency */
-    color: white;
-    padding: 14px 28px;
-    font-size: 20px;
-    font-weight: bold;
+.category {
+    padding: 15px;
+    background-color: #333; /* Trustworthy deep grey */
+    color: red; /* Bold & attention-grabbing */
     border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    font-size: 18px;
+    transition: 0.3s;
+    text-decoration: none;
+    display: inline-block;
 }
 
-.button:hover {
-    background-color: #cc0000; /* Darker red for hover effect */
-    transform: scale(1.08);
+/* Hover Effects */
+.category:hover {
+    background-color: #444; /* Slight brightening for engagement */
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(255, 0, 0, 0.5); /* Red glow for attraction */
 }
 
-/* Footer */
-footer {
-    margin-top: 30px;
-    font-size: 16px;
-    color: #ccc;
+/* Contact Links */
+a {
+    color: red; /* Matches branding theme */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white; /* Professional touch */
+    text-decoration: underline;
 }
